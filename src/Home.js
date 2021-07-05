@@ -44,21 +44,25 @@ const Home = () => {
 
   return (
     <div className="App">
-      <h4> 안녕하세요 :) </h4>
-      <div class="desc">커뮤니티에 대한 설명을 넣으세요</div>
-      <form onSubmit={onSubmit}>
-        <div class="email-input">
-          <input
-            type="email"
-            placeholder="이메일"
-            onChange={onChange}
-            required
-          />
-        </div>
-        <div>
-          <input type="submit" value="작성완료" />
-        </div>
-      </form>
+      <h2> 상다미 </h2>
+      <div class="desc">
+        <div class="desc-main">상담사 커뮤니티 코밍순 🙂</div>
+        <div class="desc-sub">이메일을 등록하시면 오픈 소식을 알려드려요 </div>
+      </div>
+      <div>
+        <form onSubmit={onSubmit}>
+          <div>
+            <input
+              type="email"
+              placeholder="이메일"
+              onChange={onChange}
+              class="email-input"
+              required
+            />
+            <input type="submit" value="소식 받기" class="submit-btn" />
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
